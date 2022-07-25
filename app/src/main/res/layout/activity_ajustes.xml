@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context="Ajustes.Ajustes">
+
+    <Button
+        android:id="@+id/btnModificarPermisos"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="31dp"
+        android:onClick="modificarPermisos"
+        android:text="Modificar Permisos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnModificarFuente" />
+
+    <Button
+        android:id="@+id/btnIdioma"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="132dp"
+        android:text="Idioma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFuentesFavoritas"
+        app:layout_constraintTop_toTopOf="@+id/btnModificarPermisos" />
+
+    <Button
+        android:id="@+id/btnFuentesFavoritas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:text="Fuentes Favoritas"
+        app:layout_constraintBottom_toBottomOf="@+id/btnIdioma"
+        app:layout_constraintEnd_toStartOf="@+id/btnIdioma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnIdioma" />
+
+    <Button
+        android:id="@+id/btnEditarPerfil"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="editarPerfil"
+        android:text="Editar Perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnModificarFuente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="AJUSTES"
+        android:textColor="#F8E2E2"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchOscuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:text="Modo Oscuro"
+        android:textColor="#F8F4F4"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switchSonido"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switchSonido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Sonido"
+        android:textColor="#FBFBFB"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <Button
+        android:id="@+id/btnModificarFuente"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginRight="179dp"
+        android:onClick="modificarFuente"
+        android:text="Modificar Fuente"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEditarPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditarPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnEditarPerfil" />
+</androidx.constraintlayout.widget.ConstraintLayout>

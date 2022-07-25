@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnyadirReporteComentario"
+    android:theme="@style/usandoGoogleDesing">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_reporte_comentario"
+        style="@style/estiloTopAnyadirComentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29b5f6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_anyadir_comentario"
+        app:navigationIcon="@drawable/ic_cerrar_24dp"
+        app:title="Reportar Comentario" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campo_seleccionar_tipo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:theme="@style/usandoGoogleDesing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_reporte_comentario"
+        app:startIconDrawable="@drawable/ic_report_problem_24dp"
+        app:startIconTint="#05a8f4">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete_reportar_comentario"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:text="Selecciona una opcion..."
+            android:textSize="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campo_anyadir_reporte_comentario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Descripcion"
+        app:helperText="Campo Opcional"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_seleccionar_tipo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="30"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="377dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_realizar_reporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#81D4FA"
+        android:text="Reportar"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_anyadir_reporte_comentario" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

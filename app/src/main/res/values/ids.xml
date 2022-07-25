@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnEditarPerfil" type="id" />
+    <item name="tvTitulo" type="id" />
+    <item name="switchSonido" type="id" />
+    <item name="btnModificarFuente" type="id" />
+    <item name="btnIdioma" type="id" />
+    <item name="btnModificarPermisos" type="id" />
+    <item name="btnFuentesFavoritas" type="id" />
+</resources>
